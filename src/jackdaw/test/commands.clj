@@ -20,7 +20,7 @@
         handler (get command-map cmd)]
     (if handler
       ;; Happy
-      (let [result (handler machine cmd params)]
+      (let [result (handler machine params)]
         (assoc {}
                :result result
                :cmd cmd
